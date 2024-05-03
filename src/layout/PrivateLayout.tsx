@@ -4,6 +4,8 @@ import { menuItems } from '../constsnts/menuItems';
 import { useGetGameListQuery } from '../api/games';
 import { useGetUsersQuery } from '../api/users';
 import { useGetFreespinsQuery } from '../api/freespin';
+import { useGetLogsQuery } from '../api/logs';
+import { useGetCardsQuery } from '../api/card';
 
 type Props = {
   children: React.ReactNode
@@ -17,6 +19,8 @@ const PrivateLayout = ({ children }: Props) => {
   useGetGameListQuery();
   useGetUsersQuery();
   useGetFreespinsQuery();
+  useGetLogsQuery();
+  useGetCardsQuery();
   
   const { token: { colorBgContainer, borderRadiusLG } } = theme.useToken();
 

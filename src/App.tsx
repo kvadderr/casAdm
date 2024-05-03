@@ -6,6 +6,8 @@ import UserPage from './pages/User'
 import FreespinPage from './pages/Freespin'
 import PopulatePage from './pages/Populate'
 import GameStartPage from './pages/GameStart'
+import LogPage from './pages/Logs'
+import CardPage from './pages/Card'
 
 export default () => {
   return (
@@ -17,6 +19,8 @@ export default () => {
           <Route path='/freespins' element={<FreespinPage />} />
           <Route path='/gameStart' element={<GameStartPage />} />
           <Route path='/populateBalance' element={<PopulatePage />} />
+          <Route path='/logs' element={<LogPage />} />
+          <Route path='/cards' element={<CardPage />} />
           <Route path='*' element={<Result
             status="404"
             title="404"
